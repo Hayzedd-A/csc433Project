@@ -1,0 +1,78 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    width: 70vw;
+    height: 60vh;
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.allPage {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(6, 60vh);
+    align-items: center;
+    width: 70vw;
+    transition: transform ease-in-out 0.5s;
+    transform: translateY(0);
+}
+.progressBar {
+    display: grid;
+    grid-template-columns: 1fr 3em;
+    gap: 2em;
+    align-items: center;
+}
+.hrBar {
+    position: relative;
+}
+.hrBar hr {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 15px;
+}
+.hrBar hr#progress {
+    background-color: gold;
+    width: 5.1%;
+    position: relative;
+    left: -1px;
+}
+.eachPage {
+    
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    /* width: 6em;
+    height: 3em; */
+    font-size: larger;
+    padding: 0.5em;
+    border: none;
+    box-shadow: 3px 2px 5px gray;
+    background-color: gray;
+    border-radius: 0.2em;
+    color: white;
+}
+button:hover {
+    background-color: lightgray;
+    color: black;
+}
+button:active{
+    transform: scale(0.9);
+}
