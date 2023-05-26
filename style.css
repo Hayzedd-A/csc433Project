@@ -22,7 +22,7 @@ body {
 .allPage {
     display: grid;
     justify-content: center;
-    grid-template-rows: repeat(6, 60vh);
+    grid-template-rows: repeat(19, 60vh);
     align-items: center;
     width: 70vw;
     transition: transform ease-in-out 0.5s;
@@ -47,7 +47,7 @@ body {
 }
 .hrBar hr#progress {
     background-color: gold;
-    width: 5.1%;
+    width: 5%;
     position: relative;
     left: -1px;
 }
