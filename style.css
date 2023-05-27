@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 body {
+    padding: 1.5em;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -21,7 +22,7 @@ body {
 }
 .allPage {
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     grid-template-rows: repeat(19, 60vh);
     align-items: center;
     width: 70vw;
@@ -31,8 +32,10 @@ body {
 .progressBar {
     display: grid;
     grid-template-columns: 1fr 3em;
-    gap: 2em;
+    gap: 1em;
     align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid green;
 }
 .hrBar {
     position: relative;
@@ -47,12 +50,36 @@ body {
 }
 .hrBar hr#progress {
     background-color: gold;
-    width: 5%;
+    width: 5.26%;
     position: relative;
     left: -1px;
 }
 .eachPage {
-    
+    display: grid;
+    gap: 2em;
+    width: 100%;
+}
+.options ul {
+    display: grid;
+    gap: 1em;
+}
+.options ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 1em;
+    font-weight: 700;
+    list-style: none;
+    border-radius: 0.5em;
+    border: 2px solid rgb(0, 155, 155)
+}
+.options ul li:hover {
+    background-color: rgb(154, 232, 232);
+    /* color: white; */
+}
+img {
+    width: 15px;
+    transform: scale(2.5);
 }
 .button {
     display: flex;
