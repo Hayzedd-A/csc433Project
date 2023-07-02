@@ -36,7 +36,7 @@ $('button').click(function(id) {
     }
     else {
         hrWidth = ($('.hrBar #background').width() / 19) 
-        let translateValue = $('.allPage').css('transform').split(' ')[5].slice(0, -1) / $(window).height() * 100
+        let translateValue = $('.allPage').css('transform').split(' ')[5].slice(0, -1) / $(body).height() * 100
 
 
         if (id.currentTarget['id'] == 'up' && translateValue <= -60) {
